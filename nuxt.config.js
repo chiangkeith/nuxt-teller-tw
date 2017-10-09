@@ -38,5 +38,8 @@ module.exports = {
   },
   modules: [
     'nuxtent'
-  ]
+  ],
+  transition: {
+    duration: 3000
+  }
 }

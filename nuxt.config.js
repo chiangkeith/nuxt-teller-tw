@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'y',
+    title: 'TXT說說人｜談天說地',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -34,5 +34,8 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  modules: [
+    'nuxtent'
+  ]
 }

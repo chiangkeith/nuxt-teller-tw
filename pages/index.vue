@@ -26,7 +26,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang='stylus'>
 .container {
   min-height: 100vh;
   display: flex;

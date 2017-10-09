@@ -52,11 +52,11 @@ html
 .post
   p
     margin 30px 0
-    line-height 2rem
+    line-height 1.85rem
     font-size 1rem
 
   h1, h2
-    margin 70px 0 30px
+    margin 50px 0 10px
 
   h1, h2, h3
     color rgba(0, 0, 0, 0.5)
@@ -67,20 +67,48 @@ html
   h2
     font-size 1.9rem
   h3
-    margin 50px 0 30px
+    margin 40px 0 10px
     font-size 1.5rem
   img
-    width 100%
+    width 100vw
     object-fit contain
-    margin 30px 0
+    margin 20px 0 20px -30px
 
   strong
-    // font-weight normal
     color rgba(22, 95, 52, 0.7)
     display inline
     margin 0 3px
     border-bottom 0 solid #165f34
-    // transition border-bottom
-    // &:hover
-    //   border-bottom 1px solid #165f34
+
+  p, h1, h2, h3
+    padding 0 30px
+
+  @media (min-width: 501px)
+    p, h1, h2, h3
+      padding 0 15%
+    img
+      margin 20px auto
+      width 100%
+
+  @media (min-width: 769px)
+    p
+      line-height 2rem
+      margin 30px 0
+    
+    h1, h2
+      margin 70px 0 30px
+    
+    h1
+      font-size 2rem
+    
+    h3
+      margin 50px 0 30px
+
+    img
+      width 100%
+      margin 30px 0
+
+    p, h1, h2, h3
+      padding 0
+
 </style>

@@ -4,9 +4,9 @@
   </div>
 </template>
 
-<style>
-html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+<style lang="stylus">
+html
+  font-family -apple-system,Microsoft JhengHei,Segoe UI,Roboto,Ubuntu,Droid Sans,Helvetica Neue,sans-serif
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -14,7 +14,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-}
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -49,4 +48,39 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+.post
+  p
+    margin 30px 0
+    line-height 2rem
+    font-size 1rem
+
+  h1, h2
+    margin 70px 0 30px
+
+  h1, h2, h3
+    color rgba(0, 0, 0, 0.5)
+  
+  h1
+    font-size 2.3rem
+
+  h2
+    font-size 1.9rem
+  h3
+    margin 50px 0 30px
+    font-size 1.5rem
+  img
+    width 100%
+    object-fit contain
+    margin 30px 0
+
+  strong
+    // font-weight normal
+    color rgba(22, 95, 52, 0.7)
+    display inline
+    margin 0 3px
+    border-bottom 0 solid #165f34
+    // transition border-bottom
+    // &:hover
+    //   border-bottom 1px solid #165f34
 </style>

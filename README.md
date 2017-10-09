@@ -33,7 +33,7 @@ titile: hihi
 Hello World
 ```
 
-Teller-tw take [nuxtent-module](https://github.com/nuxt-community/nuxtent-module) as the tool to render all posts content and generate static files with it.
+Teller-tw takes [nuxtent-module](https://github.com/nuxt-community/nuxtent-module) as the tool to render all posts content and generate static files with it.
 
 
 ## trouble-shooting

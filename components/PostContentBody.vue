@@ -1,9 +1,15 @@
 <template>
-  <div v-html="content" class="content">
+  <div class="content">
+    <nuxtent-body :body="content" />
   </div>
 </template>
 <script>
+  // import PhotoDesc from './PhotoDesc'
+
   export default {
+    components: {
+      // PhotoDesc
+    },
     data () {
       return {}
     },
@@ -17,7 +23,7 @@
 <style lang="stylus" scoped>
   .content
     width 99vw
-    max-width 800px
+    max-width 700px
     margin 40px auto
     text-align justify
 

@@ -9,6 +9,7 @@
     data () {
       return {}
     },
+    name: 'post-footer',
     mounted () {}
   }
 </script>

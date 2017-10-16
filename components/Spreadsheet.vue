@@ -17,6 +17,7 @@
         viewport: undefined
       }
     },
+    name: 'spreadsheet',
     methods: {
       updateViewport () {
         return new Promise((resolve) => {

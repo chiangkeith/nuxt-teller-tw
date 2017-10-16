@@ -83,9 +83,15 @@ body
     margin 50px 0 10px
     font-size 1.5rem
   img
-    width 99vw
     object-fit contain
+    width 99vw
     margin 20px 0 20px -30px
+
+  .img
+    width 99vw
+    margin 20px 0 20px -30px
+    img
+      width 100%
 
   strong
     color rgba(22, 95, 52, 0.7)
@@ -192,8 +198,8 @@ body
       padding 0 15%
     ul, ol
       padding 0 18%
-    img
-      margin 20px auto
+    .img, img
+      margin 20px auto 0
       width 100%
     p
       margin 60px 0 15px
@@ -223,9 +229,9 @@ body
     h3
       margin 90px 0 30px
 
-    img
+    .img, img
       width 100%
-      margin 30px 0
+      margin 30px auto 0
 
     p, h1, h2, h3
       padding 0

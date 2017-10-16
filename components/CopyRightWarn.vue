@@ -8,6 +8,7 @@
     data () {
       return {}
     },
+    name: 'copy-right',
     mounted () {}
   }
 </script>

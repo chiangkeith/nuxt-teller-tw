@@ -16,6 +16,7 @@
         viewport: undefined
       }
     },
+    name: 'youtube',
     methods: {
       updateViewport () {
         return new Promise((resolve) => {

@@ -34,8 +34,11 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    // vendor: [ 'vue-lazyload' ]
+    vendor: ['vanilla-lazyload']
   },
+  // plugins: ['~/plugins/register-lazyload'],
   modules: [
     'nuxtent'
   ],

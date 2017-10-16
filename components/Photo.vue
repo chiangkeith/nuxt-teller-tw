@@ -1,17 +1,31 @@
 <template>
   <div class="photo">
-    <img :src="src" :alt="alt" :style="style">
+    <div class="img" :style="style">
+      <img :data-src="src" :alt="alt">
+    </div>
   </div>
 </template>
 <script>
   export default {
     computed: {
       style () {
-        return {
-          width: this.width <= 1 ? this.viewport >= 768
-            ? this.width * 100 + '%'
-            : ''
-            : ''
+        if (this.viewport >= 768 && this.width) {
+          return {
+            width: Number(this.width) <= 1 ? this.width * 100 + '%' : this.width + 'px'
+          }
+        } else {
+          console.log('couldnt find this(photo.vue)', [
+            this.viewport,
+            this.width,
+            this.src
+          ])
+        }
+        return undefined
+      },
+      sizes () {
+        if (this.width) {
+          const width = Number(this.width) <= 1 ? this.width * 100 + '%' : this.width + 'px'
+          return `(min-width: 769px) ${width}, 100%`
         }
       }
     },
@@ -20,6 +34,7 @@
         viewport: undefined
       }
     },
+    name: 'photo',
     methods: {
       updateViewport () {
         return new Promise((resolve) => {
@@ -36,7 +51,7 @@
         this.updateViewport()
       })
     },
-    props: [ 'src', 'alt', 'width' ]
+    props: [ 'src', 'alt', 'width', 'lazy' ]
   }
 </script>
 <style lang="stylus" scoped>

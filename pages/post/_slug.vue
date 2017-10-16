@@ -42,9 +42,11 @@ export default {
   },
   data () {
     return {
-      viewport: undefined
+      viewport: undefined,
+      lazyLoad: undefined
     }
   },
+  name: 'post',
   methods: {
     updateViewport () {
       return new Promise((resolve) => {
@@ -56,11 +58,19 @@ export default {
     }
   },
   mounted () {
-    // console.log('hihi', this.post)
+    if (process.env.VUE_ENV === 'client') {
+      const LazyLoad = require('vanilla-lazyload')
+      this.lazyLoad = new LazyLoad({
+        threshold: 800
+      })
+    }
     this.updateViewport()
     window.addEventListener('resize', () => {
       this.updateViewport()
     })
+  },
+  updated () {
+    this.lazyLoad.update()
   },
   head () {
     return {

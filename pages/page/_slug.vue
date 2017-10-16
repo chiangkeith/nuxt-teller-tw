@@ -28,6 +28,7 @@ export default {
       viewport: undefined
     }
   },
+  name: 'page',
   methods: {
     updateViewport () {
       return new Promise((resolve) => {

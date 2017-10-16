@@ -21,6 +21,7 @@
     data () {
       return {}
     },
+    name: 'photo-desc',
     mounted () {},
     props: [ 'desc', 'src', 'prefix', 'align' ]
   }

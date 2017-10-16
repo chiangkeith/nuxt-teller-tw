@@ -13,7 +13,7 @@
     data () {
       return {}
     },
-    name: 'content-body',
+    name: 'post-body',
     mounted () {
       // console.log(this.content)
     },

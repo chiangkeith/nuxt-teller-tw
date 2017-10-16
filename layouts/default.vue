@@ -89,9 +89,14 @@ body
 
   .img
     width 99vw
-    margin 20px 0 20px -30px
+    // margin 20px 0 20px -30px
+    display flex
+    flex-direction column
+    justify-content flex-end
+    align-items center
     img
       width 100%
+      margin 0
 
   strong
     color rgba(22, 95, 52, 0.7)
